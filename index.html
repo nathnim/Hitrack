@@ -283,7 +283,7 @@ import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 
 /* URL Web App của Apps Script (đuôi /exec) */
-const API = 'DAN_URL_WEB_APP_VAO_DAY';
+const API = 'https://script.google.com/macros/s/AKfycbyE8ZNrdqwODAqaMzzGFXUdiJdEKDuIlXnLp3MnCljAu9GxVx89aKwQ43pYp4axgOdsEQ/exec';
 const KEY = 'hitrack_token';
 /* Mã khách ngẫu nhiên lưu trong trình duyệt – chỉ để đếm số người xem */
 const VID = (()=>{ try{ let v=localStorage.getItem('hitrack_vid'); if(!v){ v=(crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2)); localStorage.setItem('hitrack_vid',v);} return v; }catch(e){ return ''; } })();
